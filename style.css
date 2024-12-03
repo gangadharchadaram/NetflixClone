@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: white;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* HomeBanner */
+.homeBanner {
+  position: relative;
+  height: 60vh;
+  background: url('images/pushpa1.avif') center center/cover no-repeat;
+  
+}
+
+.homeBanner .content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.homeBanner h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.homeBanner .buttons button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.homeBanner .buttons button:first-child {
+  background-color: #e50914;
+  color: white;
+}
+
+.homeBanner .buttons button:last-child {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+/* TVBanner */
+.tvShowsBanner {
+  position: relative;
+  height: 60vh;
+  background: url('images/youBanner.webp') center center/cover no-repeat;
+}
+
+.tvShowsBanner .content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.tvShowsBanner h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.tvShowsBanner .buttons button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.tvShowsBanner .buttons button:first-child {
+  background-color: #e50914;
+  color: white;
+}
+
+.tvShowsBanner .buttons button:last-child {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+/* Movie Rows */
+.row {
+  padding: 20px;
+}
+
+.row h2 {
+  margin-bottom: 10px;
+}
+
+.movie-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.movie-container::-webkit-scrollbar {
+  display: none;
+}
+
+.movie {
+  flex: 0 0 auto;
+  width: 150px;
+}
+
+.movie img {
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.movie img:hover {
+  transform: scale(1.1);
+}
+
+/* Video Popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+}
+
+.popup-content video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Movie Details Popup */
+#moviePopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#moviePopup.hidden {
+  display: none;
+}
+
+.popup-content {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.popup-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.movie-details h1 {
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+.movie-details p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+#playNowButton {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* General section styling */
+.content-section {
+  display: none;
+}
+
+.content-section:not(.hidden) {
+  display: block;
+}
+
+.row {
+  margin: 20px;
+}
+
+.row h2 {
+  margin-bottom: 10px;
+}
+
+.movie-container {
+  display: flex;
+  gap: 10px;
+}
+
+.movie img {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">NETFLIX</div>
+    <nav>
+        <a href="#home" class="nav-button" data-target="homeSection">Home</a>
+        <a href="#tvshows" class="nav-button" data-target="tvShowsSection">TV Shows</a>
+        <a href="#movies" class="nav-button" data-target="moviesSection">Movies</a>
+        <a href="#my-list" class="nav-button" data-target="myListSection">My List</a>
+      </nav>
+  </header>
+
+  <!--Home section -->
+  <section id="homeSection" class="contentSections">
+  <div class="homeBanner">
+    <div class="content">
+      <h1>Pushpa 1</h1>
+      <p>Directed by sukumar and lead actors Allu Arjun & Rashmika Mandana. Watch now!</p>
+      <div class="buttons">
+        <button id="playButton">Play</button>
+        <button>More Info</button>
+      </div>
+    </div>
+  </div>
+  <section class="row">
+    <h2>Popular on Netflix</h2>
+    <div class="movie-container">
+      <div class="movie" data-image="images/movie1.avif" data-title="Singam Again" data-description="Singham Again directed by Rohit Shetty, is a continuation of his popular cop universe, bringing together Ajay Devgn, Akshay Kumar,Salman Khan,Tiger Shroff, Ranveer Singh,DeepikaPadukone, and Arjun Kapoor and Jackie Sheroff in a high-octane storyline inspired by themes from the Ramayana.">
+        <img src="images/movie1.avif" alt="Movie 1">
+      </div>
+      <div class="movie" data-title="Do Patti" data-description="Description for Movie 2" data-image="images/Dopatti.webp">
+        <img src="images/movie2.webp" alt="Movie 2">
+      </div>
+      <div class="movie" data-title="Vedda" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/movie3.jpg" alt="Movie 3">
+      </div>
+      <div class="movie" data-title="Movie 4" data-description="Description for Movie 4" data-image="images/movie4-bg.jpg">
+        <img src="images/image5.jpg" alt="Movie 4">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/bb3.avif" alt="Movie 5">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/movie6.webp" alt="Movie 6">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/movie7.webp" alt="Movie 7">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/movie8.avif" alt="Movie 8">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/movie9.jpg" alt="Movie 9">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/movie10.jpg" alt="Movie 10">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/movie11.avif" alt="Movie 11">
+      </div>
+    </div>
+  </section>
+  <section class="row">
+    <h2>TV Shows</h2>
+    <div class="movie-container">
+      <div class="movie" data-image="images/movie1.avif" data-title="Singam Again" data-description="Singham Again directed by Rohit Shetty, is a continuation of his popular cop universe, bringing together Ajay Devgn, Akshay Kumar,Salman Khan,Tiger Shroff, Ranveer Singh,DeepikaPadukone, and Arjun Kapoor and Jackie Sheroff in a high-octane storyline inspired by themes from the Ramayana.">
+        <img src="images/tv1.jpeg" alt="Movie 1">
+      </div>
+      <div class="movie" data-title="Do Patti" data-description="Description for Movie 2" data-image="images/movie2-bg.jpg">
+        <img src="images/tv2.jpg" alt="Movie 2">
+      </div>
+      <div class="movie" data-title="Vedda" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/tv3.jpg" alt="Movie 3">
+      </div>
+      <div class="movie" data-title="Movie 4" data-description="Description for Movie 4" data-image="images/movie4-bg.jpg">
+        <img src="images/tv4.webp" alt="Movie 4">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/tv5.jpg" alt="Movie 5">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/tv6.avif" alt="Movie 6">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/tv6.jpg" alt="Movie 7">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/tv8.avif" alt="Movie 8">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/tv9.jpeg" alt="Movie 9">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/tv10.avif" alt="Movie 10">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/tv11.avif" alt="Movie 11">
+      </div>
+    </div>
+  </section>
+  <section class="row">
+    <h2>K Dramas</h2>
+    <div class="movie-container">
+      <div class="movie" data-image="images/movie1.avif" data-title="Singam Again" data-description="Singham Again directed by Rohit Shetty, is a continuation of his popular cop universe, bringing together Ajay Devgn, Akshay Kumar,Salman Khan,Tiger Shroff, Ranveer Singh,DeepikaPadukone, and Arjun Kapoor and Jackie Sheroff in a high-octane storyline inspired by themes from the Ramayana.">
+        <img src="images/qot.jpg" alt="Movie 1">
+      </div>
+      <div class="movie" data-title="Twenty One Twenty Two" data-description="Description for Movie 2" data-image="images/kdrama2.jpg">
+        <img src="images/kdrama2.jpg" alt="Movie 2">
+      </div>
+      <div class="movie" data-title="Vedda" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/kdrama3.jpg" alt="Movie 3">
+      </div>
+      <div class="movie" data-title="Movie 4" data-description="Description for Movie 4" data-image="images/movie4-bg.jpg">
+        <img src="images/kdrama4.avif" alt="Movie 4">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/kdrama3.webp" alt="Movie 5">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/kdrama5.avif" alt="Movie 6">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/kdrama6.jpg" alt="Movie 7">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/kdrama8.jpg" alt="Movie 8">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/kdrama9.jpg" alt="Movie 9">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/kdrama10.avif" alt="Movie 10">
+      </div>
+      <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+        <img src="images/kdarama7.avif" alt="Movie 11">
+      </div>
+    </div>
+  </section>
+</section>
+
+  <!--TV shows-->
+  <section id="tvShowsSection" class="contentSections hidden">
+  <div class="tvShowsBanner">
+    <div id="slideshow" class="content">
+      <h1 id="slideTitle">YOU</h1>
+      <p id="slideDescription">The series depicts the crisis and rekindling of love...</p>
+      <div class="buttons">
+        <button id="playButton">Play</button>
+        <button>More Info</button>
+      </div>
+    </div>
+  </div>
+    <section class="row">
+      <h2>TV Shows</h2>
+      <div class="movie-container">
+        <div class="movie" data-image="images/movie1.avif" data-title="Singam Again" data-description="Singham Again directed by Rohit Shetty, is a continuation of his popular cop universe, bringing together Ajay Devgn, Akshay Kumar,Salman Khan,Tiger Shroff, Ranveer Singh,DeepikaPadukone, and Arjun Kapoor and Jackie Sheroff in a high-octane storyline inspired by themes from the Ramayana.">
+          <img src="images/tv1.jpeg" alt="Movie 1">
+        </div>
+        <div class="movie" data-title="Do Patti" data-description="Description for Movie 2" data-image="images/movie2-bg.jpg">
+          <img src="images/tv2.jpg" alt="Movie 2">
+        </div>
+        <div class="movie" data-title="Vedda" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+          <img src="images/tv3.jpg" alt="Movie 3">
+        </div>
+        <div class="movie" data-title="Movie 4" data-description="Description for Movie 4" data-image="images/movie4-bg.jpg">
+          <img src="images/tv4.webp" alt="Movie 4">
+        </div>
+        <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+          <img src="images/tv5.jpg" alt="Movie 5">
+        </div>
+        <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+          <img src="images/tv6.avif" alt="Movie 6">
+        </div>
+        <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+          <img src="images/tv6.jpg" alt="Movie 7">
+        </div>
+        <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+          <img src="images/tv8.avif" alt="Movie 8">
+        </div>
+        <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+          <img src="images/tv9.jpeg" alt="Movie 9">
+        </div>
+        <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+          <img src="images/tv10.avif" alt="Movie 10">
+        </div>
+        <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+          <img src="images/tv11.avif" alt="Movie 11">
+        </div>
+      </div>
+    </section>
+  </section>
+
+ <!--Movies-->
+  <section id="moviesSection" class="contentSections hidden">
+    <div class="homeBanner">
+      <div class="content">
+        <h1>Pushpa 1</h1>
+        <p>Directed by sukumar and lead actors Allu Arjun & Rashmika Mandana. Watch now!</p>
+        <div class="buttons">
+          <button id="playButton">Play</button>
+          <button>More Info</button>
+        </div>
+      </div>
+    </div>
+    <section class="row">
+      <h2>Popular on Netflix</h2>
+      <div class="movie-container">
+        <div class="movie" data-image="images/movie1.avif" data-title="Singam Again" data-description="Singham Again directed by Rohit Shetty, is a continuation of his popular cop universe, bringing together Ajay Devgn, Akshay Kumar,Salman Khan,Tiger Shroff, Ranveer Singh,DeepikaPadukone, and Arjun Kapoor and Jackie Sheroff in a high-octane storyline inspired by themes from the Ramayana.">
+          <img src="images/movie1.avif" alt="Movie 1">
+        </div>
+        <div class="movie" data-title="Do Patti" data-description="Description for Movie 2" data-image="images/movie2-bg.jpg">
+          <img src="images/movie2.webp" alt="Movie 2">
+        </div>
+        <div class="movie" data-title="Vedda" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+          <img src="images/movie3.jpg" alt="Movie 3">
+        </div>
+        <div class="movie" data-title="Movie 4" data-description="Description for Movie 4" data-image="images/movie4-bg.jpg">
+          <img src="images/image5.jpg" alt="Movie 4">
+        </div>
+        <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+          <img src="images/bb3.avif" alt="Movie 5">
+        </div>
+        <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+          <img src="images/movie6.webp" alt="Movie 6">
+        </div>
+        <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+          <img src="images/movie7.webp" alt="Movie 7">
+        </div>
+        <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+          <img src="images/movie8.avif" alt="Movie 8">
+        </div>
+        <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+          <img src="images/movie9.jpg" alt="Movie 9">
+        </div>
+        <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+          <img src="images/movie10.jpg" alt="Movie 10">
+        </div>
+        <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+          <img src="images/movie11.avif" alt="Movie 11">
+        </div>
+      </div>
+    </section>
+    </section>
+
+   <!--My list-->
+    <section id="myListSection" class="contentSections hidden">
+      <div class="homeBanner">
+        <div class="content">
+          <h1>Pushpa 1</h1>
+          <p>Directed by sukumar and lead actors Allu Arjun & Rashmika Mandana. Watch now!</p>
+          <div class="buttons">
+            <button id="playButton">Play</button>
+            <button>More Info</button>
+          </div>
+        </div>
+      </div>
+      <section class="row">
+        <h2>Popular on Netflix</h2>
+        <div class="movie-container">
+          <div class="movie" data-image="images/movie1.avif" data-title="Singam Again" data-description="Singham Again directed by Rohit Shetty, is a continuation of his popular cop universe, bringing together Ajay Devgn, Akshay Kumar,Salman Khan,Tiger Shroff, Ranveer Singh,DeepikaPadukone, and Arjun Kapoor and Jackie Sheroff in a high-octane storyline inspired by themes from the Ramayana.">
+            <img src="images/movie1.avif" alt="Movie 1">
+          </div>
+          <div class="movie" data-title="Do Patti" data-description="Description for Movie 2" data-image="images/movie2-bg.jpg">
+            <img src="images/movie2.webp" alt="Movie 2">
+          </div>
+          <div class="movie" data-title="Vedda" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/movie3.jpg" alt="Movie 3">
+          </div>
+          <div class="movie" data-title="Movie 4" data-description="Description for Movie 4" data-image="images/movie4-bg.jpg">
+            <img src="images/image5.jpg" alt="Movie 4">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/bb3.avif" alt="Movie 5">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/movie6.webp" alt="Movie 6">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/movie7.webp" alt="Movie 7">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/movie8.avif" alt="Movie 8">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/movie9.jpg" alt="Movie 9">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/movie10.jpg" alt="Movie 10">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/movie11.avif" alt="Movie 11">
+          </div>
+        </div>
+      </section>
+      <section class="row">
+        <h2>TV Shows</h2>
+        <div class="movie-container">
+          <div class="movie" data-image="images/movie1.avif" data-title="Singam Again" data-description="Singham Again directed by Rohit Shetty, is a continuation of his popular cop universe, bringing together Ajay Devgn, Akshay Kumar,Salman Khan,Tiger Shroff, Ranveer Singh,DeepikaPadukone, and Arjun Kapoor and Jackie Sheroff in a high-octane storyline inspired by themes from the Ramayana.">
+            <img src="images/tv1.jpeg" alt="Movie 1">
+          </div>
+          <div class="movie" data-title="Do Patti" data-description="Description for Movie 2" data-image="images/movie2-bg.jpg">
+            <img src="images/tv2.jpg" alt="Movie 2">
+          </div>
+          <div class="movie" data-title="Vedda" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/tv3.jpg" alt="Movie 3">
+          </div>
+          <div class="movie" data-title="Movie 4" data-description="Description for Movie 4" data-image="images/movie4-bg.jpg">
+            <img src="images/tv4.webp" alt="Movie 4">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/tv5.jpg" alt="Movie 5">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/tv6.avif" alt="Movie 6">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/tv6.jpg" alt="Movie 7">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/tv8.avif" alt="Movie 8">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/tv9.jpeg" alt="Movie 9">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/tv10.avif" alt="Movie 10">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/tv11.avif" alt="Movie 11">
+          </div>
+        </div>
+      </section>
+      <section class="row">
+        <h2>K Dramas</h2>
+        <div class="movie-container">
+          <div class="movie" data-image="images/movie1.avif" data-title="Singam Again" data-description="Singham Again directed by Rohit Shetty, is a continuation of his popular cop universe, bringing together Ajay Devgn, Akshay Kumar,Salman Khan,Tiger Shroff, Ranveer Singh,DeepikaPadukone, and Arjun Kapoor and Jackie Sheroff in a high-octane storyline inspired by themes from the Ramayana.">
+            <img src="images/qot.jpg" alt="Movie 1">
+          </div>
+          <div class="movie" data-title="Twenty One Twenty Two" data-description="Description for Movie 2" data-image="images/kdrama2.jpg">
+            <img src="images/kdrama2.jpg" alt="Movie 2">
+          </div>
+          <div class="movie" data-title="Vedda" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/kdrama3.jpg" alt="Movie 3">
+          </div>
+          <div class="movie" data-title="Movie 4" data-description="Description for Movie 4" data-image="images/movie4-bg.jpg">
+            <img src="images/kdrama4.avif" alt="Movie 4">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/kdrama3.webp" alt="Movie 5">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/kdrama5.avif" alt="Movie 6">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/kdrama6.jpg" alt="Movie 7">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/kdrama8.jpg" alt="Movie 8">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/kdrama9.jpg" alt="Movie 9">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/kdrama10.avif" alt="Movie 10">
+          </div>
+          <div class="movie" data-title="Movie 3" data-description="Description for Movie 3" data-image="images/movie3-bg.jpg">
+            <img src="images/kdarama7.avif" alt="Movie 11">
+          </div>
+        </div>
+      </section>
+    </section>
+
+  <!-- Movie Details Popup -->
+  <div id="moviePopup" class="popup hidden">
+    <div class="popup-content">
+      <span id="closeMoviePopup" class="close">&times;</span>
+      <div class="movie-details" id="movieDetails">
+        <h1 id="movieTitle"></h1>
+        <p id="movieDescription"></p>
+        <button id="playNowButton">Play Now</button>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Video Popup -->
+  <div id="videoPopup" class="popup hidden">
+    <div class="popup-content">
+      <span id="closePopup" class="close">&times;</span>
+      <video id="moviePlayer" controls>
+        <source src="videos/pushpa.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
